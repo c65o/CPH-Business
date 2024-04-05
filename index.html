@@ -3,27 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="container">  
-        <div class="head">
-            <div class="logo">Logo</div>
-            <div class="nav">Nav</div>
-        </div>
-        <div class="box-1">
-            <p>Splash</p>
-        </div>
-        <div class="box-2">
-            <div class="mini-box b1"><p>Tilbud 3</p></div>
-            <div class="mini-box b2"><p>Tilbud 2</p></div>
-            <div class="mini-box b3"><p>Tilbud 1</p></div>
-        </div>
-        <div class="box-3">
-            <p>Proces</p>
-        </div>
-        <div class="head b4">Footer</div>
+    <div class="logo">
+        <a href="#">Logo</a>
     </div>
+    <!-- stjæler lidt javascript fra w3 schools -->
+    <div class="topnav" id="myTopnav">
+        <a href="main.html" class="button">Forside</a>
+        <a href="projekter.html" class="button">Projekter</a>
+        <a href="designp.html" class="button">Design process</a>
+        <a href="kontakt.html" class="button">Kontakt</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="behind">
+    <h1>Portfolio</h1>
+    <h2>Anders Lau Didrichsen</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eius cum culpa, voluptates et atque dolorem. Soluta provident accusantium fuga.</p>
+       <div class="flex-container">
+    <div class="kasse1">Om mig</div>
+    <div class="kasse2"><a href="projekter.html">Projekter</a></div> <!-- vis billeder -->
+    <div class="kasse3"><a href="designp.html">Design process</a></div>
+    <div class="kasse4"><a href="kontakt.html">Kontakt</a></div>
+      </div>
+
+      
+    </div>
+ 
+    <!-- Display af farverne -->
+    <div class="container">
+        <div class="barn1">1</div>
+        <div class="barn2">2</div>
+        <div class="barn3">3</div>
+        <div class="barn4">4</div>
+        <div class="barn5">5</div>
+    </div>
+    
+    <!--  her kommer der et java script, som vi kalder på længere oppe -->
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
 </body>
 </html>
